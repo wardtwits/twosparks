@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Two Sparks</title>
+  <meta name="description" content="Get in touch with Chris at Two Sparks about your app or web project.">
+  <meta name="theme-color" content="#05070f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact — Two Sparks">
+  <meta property="og:description" content="Have an idea that needs a spark? Let’s talk.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="sky" aria-hidden="true"><canvas></canvas></div>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Two Sparks home">
+        <img src="assets/img/mark.png" alt="" width="46" height="35">
+        <span>Two Sparks Software</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu"><span></span></button>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a class="btn btn-primary btn-sm" href="contact.html" aria-current="page">Let’s talk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="kicker reveal">Contact</span>
+        <h1 class="reveal" style="--delay:.08s">Let’s make <span class="gradient-text">something great.</span></h1>
+        <p class="lead reveal" style="--delay:.16s">Tell me a little about your project: what you’re building, who it’s for, and where you’re stuck. I read every message and usually reply within a couple of business days.</p>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container contact-grid">
+        <form class="card form-card reveal" id="contact-form" data-email="Chris@twosparks.app" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Jane Appleseed" required aria-describedby="name-error">
+              <span class="error" id="name-error" data-error-for="name" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required aria-describedby="email-error">
+              <span class="error" id="email-error" data-error-for="email" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="type">What are you looking for?</label>
+            <select id="type" name="type">
+              <option value="">Choose one (optional)</option>
+              <option>iPhone app</option>
+              <option>Web app or website</option>
+              <option>Design &amp; product help</option>
+              <option>Improving an existing app</option>
+              <option>Just saying hi</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" placeholder="A few sentences about your idea, timeline, and goals…" required aria-describedby="message-error"></textarea>
+            <span class="error" id="message-error" data-error-for="message" aria-live="polite"></span>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send message
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </button>
+            <p class="form-note">Opens your email app with your message ready to send.</p>
+          </div>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-aside">
+          <div class="card reveal" style="--delay:.08s">
+            <h3>Prefer email?</h3>
+            <div class="email-line">
+              <a href="mailto:Chris@twosparks.app">Chris@twosparks.app</a>
+              <button class="btn btn-ghost btn-sm" type="button" data-copy="Chris@twosparks.app">Copy</button>
+            </div>
+          </div>
+          <div class="card reveal" style="--delay:.16s">
+            <h3>What happens next</h3>
+            <ol class="steps">
+              <li><b>1</b><span>I’ll read your message and reply with any questions.</span></li>
+              <li><b>2</b><span>We’ll hop on a quick call to talk through goals and scope.</span></li>
+              <li><b>3</b><span>You’ll get a clear plan, timeline, and estimate.</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="assets/img/mark.png" alt="" width="46" height="35">
+            <span>Two Sparks</span>
+          </a>
+          <p>Software crafted by Chris. Polished apps for iPhone and the web.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="index.html">Home</a>
+          <a href="work.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Two Sparks Software</span>
+        <span>Made with care, one spark at a time.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
