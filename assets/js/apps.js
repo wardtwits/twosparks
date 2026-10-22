@@ -21,7 +21,7 @@
       },
       hook: "Five letters. Five words. One puzzle.",
       description:
-        "Viisi is a daily anagram word game for iPhone. Everyone gets the same five letters each day, and the goal is to find five words that use them. There are no ads, no account to make, and it works offline.",
+        "Viisi is a daily anagram word game for iOS. Everyone gets the same five letters each day, and the goal is to find five words that use them. There are no ads, no account to make, and it works offline.",
       features: [
         ["Daily shared puzzle", "with a new set of letters every morning"],
         ["Hints that unlock gently,", "plus an Expert Mode with no hints at all"],
@@ -51,7 +51,7 @@
       },
       hook: "Where have I seen them before?",
       description:
-        "CastLink compares any two movies or TV shows to show the cast they share, or any two actors to show the titles they have both been in. It can also trace the path from a film actor back to Kevin Bacon. Use it on the web or on iPhone.",
+        "CastLink compares any two movies or TV shows to show the cast they share, or any two actors to show the titles they have both been in. It can also trace the path from a film actor back to Kevin Bacon. Use it on the web or on iOS.",
       features: [
         ["Shared cast", "between any movies or TV shows"],
         ["Shared titles", "between any two actors"],
