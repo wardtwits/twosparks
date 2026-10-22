@@ -199,7 +199,7 @@
 
       var name = form.elements.name.value.trim();
       var email = form.elements.email.value.trim();
-      var type = form.elements.type.value;
+      var about = form.elements.about.value;
       var message = form.elements.message.value.trim();
 
       var ok = [
@@ -214,8 +214,8 @@
         return;
       }
 
-      var subject = "New project inquiry" + (type ? " — " + type : "") + " from " + name;
-      var body = message + "\n\n— " + name + " (" + email + ")" + (type ? "\nProject type: " + type : "");
+      var subject = (about ? about + ": " : "") + "Message from " + name;
+      var body = message + "\n\n— " + name + " (" + email + ")" + (about ? "\nAbout: " + about : "");
 
       window.location.href =
         "mailto:" + to + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);

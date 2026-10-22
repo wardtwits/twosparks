@@ -3,13 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About — Two Sparks</title>
-  <meta name="description" content="Meet Chris, the developer behind Two Sparks, an independent studio making polished apps for mobile devices and the web.">
+  <title>About Chris — Two Sparks</title>
+  <meta name="description" content="Who I am, why I build apps outside my day job, and what Viisi, CastLink, and CSS Scratchpad have in common.">
+  <link rel="canonical" href="https://twosparks.software/about.html">
   <meta name="theme-color" content="#05070f">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="About — Two Sparks">
-  <meta property="og:description" content="Meet Chris, the developer behind Two Sparks.">
-  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Two Sparks">
+  <meta property="og:url" content="https://twosparks.software/about.html">
+  <meta property="og:title" content="About Chris — Two Sparks">
+  <meta property="og:description" content="Who I am, why I build apps on the side, and what ties them together.">
+  <meta property="og:image" content="https://twosparks.software/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Two Sparks logo: two gold sparks circled by an orbit on a dark background">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Chris — Two Sparks">
+  <meta name="twitter:description" content="Who I am, why I build apps on the side, and what ties them together.">
+  <meta name="twitter:image" content="https://twosparks.software/assets/img/og-image.jpg">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,16 +34,16 @@
 
   <header class="site-header">
     <div class="container">
-      <a class="brand" href="index.html" aria-label="Two Sparks home">
+      <a class="brand" href="index.html">
         <img src="assets/img/mark.png" alt="" width="46" height="35">
         <span>Two Sparks Software</span>
       </a>
       <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu"><span></span></button>
       <nav class="nav" id="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
-        <a href="work.html">Work</a>
+        <a href="work.html">Apps</a>
         <a href="about.html" aria-current="page">About</a>
-        <a class="btn btn-primary btn-sm" href="contact.html">Let’s talk</a>
+        <a class="btn btn-primary btn-sm" href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -41,53 +52,54 @@
     <section class="page-hero">
       <div class="container">
         <span class="kicker reveal">About</span>
-        <h1 class="reveal" style="--delay:.08s">Hi, I’m Chris. <span class="gradient-text">I make software that sparks joy.</span></h1>
+        <h1 class="reveal" style="--delay:.08s">Hi, I’m Chris. <span class="gradient-text">I build apps on the side.</span></h1>
       </div>
     </section>
 
     <section class="section section-tight">
       <div class="container about-grid">
         <aside class="card about-card reveal">
-          <img class="mark" src="assets/img/mark.png" alt="" width="236" height="180">
+          <picture>
+            <source srcset="images/author.webp" type="image/webp">
+            <img class="author" src="images/author.png" alt="Illustration of Chris at a desk with a laptop, rocket, flowchart, and lightbulb." width="760" height="692">
+          </picture>
           <h2>Chris</h2>
-          <p class="role">Founder &amp; developer, Two Sparks</p>
-          <a class="btn btn-primary" href="contact.html">Work with me
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-          </a>
+          <p class="role">Builds apps on the side.</p>
+          <div class="about-links">
+            <a class="btn btn-primary" href="https://github.com/wardtwits" target="_blank" rel="noopener">GitHub
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="mailto:Chris@twosparks.software">Chris@twosparks.software</a>
+          </div>
         </aside>
 
         <div class="prose">
           <div class="reveal">
-            <h2>The studio</h2>
-            <p><strong>Two Sparks is my independent software studio.</strong> It’s where I design, build, and launch my own products and help others bring theirs to life. Every app that carries the name gets the same treatment: a clear idea, careful design, and solid engineering underneath.</p>
-            <p>I work across the whole stack of a product, from shaping the concept and designing the interface to writing the code, preparing the launch, and looking after it once it’s out in the world.</p>
+            <h2>Who I am</h2>
+            <p><strong>I’m Chris.</strong> [PLACEHOLDER: your day job and background, in a sentence or two.]</p>
+            <p>Outside of work, I build small apps and put them out for anyone to use. [PLACEHOLDER: why you build things on your own time, and what you get out of it.]</p>
           </div>
 
-          <blockquote class="pull reveal">Great software starts with a small spark of an idea, and becomes something special when craft and care meet.</blockquote>
-
           <div class="reveal">
-            <h2>What I’ve been building</h2>
-            <p><strong>Viisi</strong> is a daily word puzzle for iPhone that respects its players, with no ads, no accounts, and no data collection. <strong>CastLink</strong> is a web app that untangles the connections between actors, movies, and TV shows. Different products for different audiences, built with the same approach: focus on the experience, then sweat the details.</p>
+            <h2>What I’ve built</h2>
+            <p><strong>Viisi</strong> is a daily word game for iPhone: five letters, five words, one puzzle. <strong>CastLink</strong> shows how movies, TV shows, and actors connect, on the web and on iPhone. <strong>CSS Scratchpad</strong> is a Chrome extension for trying out CSS on any page without touching the source.</p>
+            <p>They’re for different people, but they follow the same rules: each one does a single job, none of them show ads or ask for an account, and none of them track you.</p>
           </div>
 
           <div class="reveal">
             <h2>What I care about</h2>
             <div class="values">
               <div class="card">
-                <h3>Craft over clutter</h3>
-                <p>Fewer, better features. Every screen earns its place.</p>
+                <h3>Fewer, better features</h3>
+                <p>Every screen has to earn its place.</p>
               </div>
               <div class="card">
-                <h3>Respect for users</h3>
-                <p>Privacy first, no dark patterns, and accessible by default.</p>
+                <h3>Respect for the people using it</h3>
+                <p>No ads, no tracking, no dark patterns. Accessible from the start.</p>
               </div>
               <div class="card">
-                <h3>Shipping matters</h3>
-                <p>Ideas are great, but real products in real hands are better.</p>
-              </div>
-              <div class="card">
-                <h3>Clear communication</h3>
-                <p>Honest timelines, regular updates, and no jargon.</p>
+                <h3>Finishing things</h3>
+                <p>An app someone can use beats a perfect one that never ships.</p>
               </div>
             </div>
           </div>
@@ -99,13 +111,13 @@
       <div class="container">
         <div class="cta reveal">
           <img class="cta-mark" src="assets/img/mark.png" alt="" width="236" height="180">
-          <h2 id="cta-heading">Let’s build something bright.</h2>
-          <p>Tell me about your idea and we’ll figure out the best way to bring it to life.</p>
+          <h2 id="cta-heading">Thanks for stopping by.</h2>
+          <p>Take a look at what I’ve made, or send a note if you’ve used one of the apps.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="contact.html">Get in touch
+            <a class="btn btn-primary" href="work.html">See the apps
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
             </a>
-            <a class="btn btn-ghost" href="work.html">See the work</a>
+            <a class="btn btn-ghost" href="contact.html">Say hi</a>
           </div>
         </div>
       </div>
@@ -120,11 +132,11 @@
             <img src="assets/img/mark.png" alt="" width="46" height="35">
             <span>Two Sparks</span>
           </a>
-          <p>Software crafted by Chris. Polished apps for mobile devices and the web.</p>
+          <p>Small apps I build on the side. No ads, no accounts, no tracking.</p>
         </div>
         <nav class="footer-nav" aria-label="Footer">
           <a href="index.html">Home</a>
-          <a href="work.html">Work</a>
+          <a href="work.html">Apps</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </nav>

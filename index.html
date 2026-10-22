@@ -3,13 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Two Sparks — Software by Chris</title>
-  <meta name="description" content="Two Sparks is the independent software studio of Chris, designing and building polished apps for mobile devices and the web.">
+  <title>Two Sparks — Apps by Chris</title>
+  <meta name="description" content="Viisi, CastLink, and CSS Scratchpad: small apps Chris builds on the side. No ads, no accounts, no tracking. Find support, privacy policies, and a way to send feedback.">
+  <link rel="canonical" href="https://twosparks.software/">
   <meta name="theme-color" content="#05070f">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Two Sparks — Software by Chris">
-  <meta property="og:description" content="Polished apps for mobile devices and the web, from first spark to launch.">
-  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <meta property="og:site_name" content="Two Sparks">
+  <meta property="og:url" content="https://twosparks.software/">
+  <meta property="og:title" content="Two Sparks — Apps by Chris">
+  <meta property="og:description" content="Small apps I build on my own time: a daily word game, a movie and TV connections explorer, and a CSS tool for Chrome.">
+  <meta property="og:image" content="https://twosparks.software/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Two Sparks logo: two gold sparks circled by an orbit on a dark background">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Two Sparks — Apps by Chris">
+  <meta name="twitter:description" content="Small apps I build on my own time: a daily word game, a movie and TV connections explorer, and a CSS tool for Chrome.">
+  <meta name="twitter:image" content="https://twosparks.software/assets/img/og-image.jpg">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,16 +34,16 @@
 
   <header class="site-header">
     <div class="container">
-      <a class="brand" href="index.html" aria-label="Two Sparks home">
+      <a class="brand" href="index.html">
         <img src="assets/img/mark.png" alt="" width="46" height="35">
         <span>Two Sparks Software</span>
       </a>
       <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu"><span></span></button>
       <nav class="nav" id="site-nav" aria-label="Primary">
         <a href="index.html" aria-current="page">Home</a>
-        <a href="work.html">Work</a>
+        <a href="work.html">Apps</a>
         <a href="about.html">About</a>
-        <a class="btn btn-primary btn-sm" href="contact.html">Let’s talk</a>
+        <a class="btn btn-primary btn-sm" href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -41,14 +52,14 @@
     <section class="hero">
       <div class="container">
         <div>
-          <span class="eyebrow reveal"><span class="dot"></span>Independent software studio</span>
-          <h1 class="reveal" style="--delay:.08s">Bright ideas, <span class="gradient-text">beautifully shipped.</span></h1>
-          <p class="lead reveal" style="--delay:.16s">I’m Chris. I build the apps I wish existed. I design and build polished software for mobile devices and the web, taking them from the first spark to a product people love to use.</p>
+          <span class="eyebrow reveal"><span class="dot"></span>Side projects by Chris</span>
+          <h1 class="reveal" style="--delay:.08s">Small apps I build <span class="gradient-text">on my own time.</span></h1>
+          <p class="lead reveal" style="--delay:.16s">I’m Chris, and this is where I keep the apps I make outside my day job. Right now that’s a daily word game for iPhone, a way to see which actors and titles connect, and a Chrome extension for testing CSS.</p>
           <div class="hero-actions reveal" style="--delay:.24s">
-            <a class="btn btn-primary" href="work.html">See the work
+            <a class="btn btn-primary" href="work.html">See the apps
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
             </a>
-            <a class="btn btn-ghost" href="contact.html">Start a project</a>
+            <a class="btn btn-ghost" href="about.html">About me</a>
           </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
@@ -63,139 +74,76 @@
       </div>
     </section>
 
-    <section class="section section-tight" aria-labelledby="work-heading">
+    <section class="section section-tight" aria-labelledby="apps-heading">
       <div class="container">
         <div class="section-head">
           <div class="reveal">
-            <span class="kicker">Selected work</span>
-            <h2 id="work-heading">Products, not just projects.</h2>
+            <span class="kicker">The apps</span>
+            <h2 id="apps-heading">What I’ve made so far.</h2>
           </div>
-          <p class="reveal" style="--delay:.08s">Each one is designed, built, and shipped end to end, with real attention to the small details.</p>
+          <p class="reveal" style="--delay:.08s">Each card links to the store, the app’s own site, support, and its privacy policy.</p>
         </div>
 
-        <div class="projects">
-          <article class="card project reveal">
-            <div class="project-media project-media--viisi">
-              <img src="assets/img/viisi.jpg" alt="Viisi website showing the daily word puzzle and mobile app preview" width="1400" height="875" loading="lazy">
-            </div>
-            <div class="project-body">
-              <div class="project-meta">
-                <h3>Viisi</h3>
-                <span class="status">Live on iOS</span>
-              </div>
-              <p>A daily anagram word game. Five letters, five words, one puzzle. Built with no ads and privacy first.</p>
-              <ul class="tags">
-                <li>iOS app</li>
-                <li>Game design</li>
-                <li>Product site</li>
-              </ul>
-              <a class="project-link" href="https://viisi.app" target="_blank" rel="noopener">Visit viisi.app
-                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg>
-              </a>
-            </div>
-          </article>
-
-          <article class="card project reveal" style="--delay:.1s">
-            <div class="project-media project-media--castlink">
-              <img src="assets/img/castlink-icon.png" alt="CastLink app icon: a golden film reel" width="256" height="256" loading="lazy">
-            </div>
-            <div class="project-body">
-              <div class="project-meta">
-                <h3>CastLink</h3>
-                <div class="project-statuses">
-                  <span class="status">Live on the web</span>
-                  <a class="status status-link" href="https://apps.apple.com/us/app/castlink/id6760738115" target="_blank" rel="noopener" aria-label="CastLink: Live on iOS (App Store)">Live on iOS</a>
-                </div>
-              </div>
-              <p>Explore shared cast between movies and TV shows, shared titles between actors, and Kevin Bacon connection paths.</p>
-              <ul class="tags">
-                <li>Web app</li>
-                <li>TMDB API</li>
-                <li>Search &amp; graphs</li>
-              </ul>
-              <a class="project-link" href="https://castlink.app" target="_blank" rel="noopener">Visit castlink.app
-                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg>
-              </a>
-            </div>
-          </article>
+        <!-- Cards are rendered from assets/js/apps.js -->
+        <div class="projects" data-apps="cards">
+          <noscript><p class="noscript">The app list needs JavaScript. You can also find the apps at <a href="https://viisi.app">viisi.app</a>, <a href="https://castlink.app">castlink.app</a>, and <a href="https://wardtwits.github.io/css-scratchpad/">CSS Scratchpad</a>.</p></noscript>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="services-heading">
+    <section class="section" aria-labelledby="build-heading">
       <div class="container">
         <div class="section-head">
           <div class="reveal">
-            <span class="kicker">What I do</span>
-            <h2 id="services-heading">From idea to App Store, and everything between.</h2>
+            <span class="kicker">How I build</span>
+            <h2 id="build-heading">A few rules every app follows.</h2>
           </div>
         </div>
         <div class="grid-3">
           <article class="card feature reveal">
-            <div class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg>
-            </div>
-            <h3>Mobile apps</h3>
-            <p>Native iOS apps that feel at home on the platform: fast, accessible, and polished down to the last animation.</p>
+            <h3>No ads</h3>
+            <p>Nothing between you and the thing you opened the app to do.</p>
           </article>
           <article class="card feature reveal" style="--delay:.08s">
-            <div class="icon icon--blue" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="16" rx="3"/><path d="M2.5 9h19M6 6.5h.01M8.5 6.5h.01"/></svg>
-            </div>
-            <h3>Web apps &amp; sites</h3>
-            <p>Responsive web apps and product sites that load quickly, rank well, and work beautifully on every screen.</p>
+            <h3>No accounts</h3>
+            <p>Open it and use it. There’s nothing to sign up for.</p>
           </article>
           <article class="card feature reveal" style="--delay:.16s">
-            <div class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l2.2 6.3 6.3 2.2-6.3 2.2L12 19.5l-2.2-6.3L3.5 11l6.3-2.2z"/><path d="M19 17l.8 2.2L22 20l-2.2.8L19 23l-.8-2.2L16 20l2.2-.8z"/></svg>
-            </div>
-            <h3>Product &amp; design</h3>
-            <p>Shaping the idea, the interface, and the launch so the finished product is focused, intuitive, and memorable.</p>
+            <h3>No tracking</h3>
+            <p>No analytics SDKs and no ad trackers, in any of them.</p>
+          </article>
+          <article class="card feature reveal">
+            <h3>Offline where possible</h3>
+            <p>Viisi plays without a connection, and CSS Scratchpad keeps everything in your browser. CastLink needs the network to look things up.</p>
+          </article>
+          <article class="card feature reveal" style="--delay:.08s">
+            <h3>Accessible</h3>
+            <p>I aim for readable contrast, keyboard and screen reader support, and respect for reduced-motion settings.</p>
+          </article>
+          <article class="card feature reveal" style="--delay:.16s">
+            <h3>Small and focused</h3>
+            <p>Each app does one job. If a feature doesn’t help with that job, it stays out.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-tight" aria-labelledby="process-heading">
-      <div class="container">
-        <div class="section-head">
-          <div class="reveal">
-            <span class="kicker">How it works</span>
-            <h2 id="process-heading">The spark of an idea turns into some real</h2>
-          </div>
-        </div>
-        <ol class="process">
-          <li class="reveal">
-            <h3>Spark</h3>
-            <p>We dig into the idea, the audience, and what success looks like, then trim it to what matters most.</p>
-          </li>
-          <li class="reveal" style="--delay:.08s">
-            <h3>Build</h3>
-            <p>Design and development happen side by side, with working builds you can try early and often.</p>
-          </li>
-          <li class="reveal" style="--delay:.16s">
-            <h3>Launch</h3>
-            <p>Polish, testing, store listings, and launch, plus support afterward so it keeps getting better.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="cta-heading">
+    <section class="section section-tight" aria-labelledby="cta-heading">
       <div class="container">
         <div class="cta reveal">
           <img class="cta-mark" src="assets/img/mark.png" alt="" width="236" height="180">
-          <h2 id="cta-heading">Have an idea that needs a spark?</h2>
-          <p>Whether it’s a new app, a web tool, or a product that needs polish, I’d love to hear about it.</p>
+          <h2 id="cta-heading">Found a bug? Have an idea?</h2>
+          <p>If something in one of my apps isn’t working, or you wish it did one more thing, I’d like to hear about it. Hello is welcome too.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="contact.html">Get in touch
+            <a class="btn btn-primary" href="contact.html">Send feedback
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
             </a>
-            <a class="btn btn-ghost" href="about.html">About Chris</a>
+            <a class="btn btn-ghost" href="about.html">About me</a>
           </div>
         </div>
       </div>
     </section>
+    <script src="assets/js/apps.js"></script>
   </main>
 
   <footer class="site-footer">
@@ -206,11 +154,11 @@
             <img src="assets/img/mark.png" alt="" width="46" height="35">
             <span>Two Sparks</span>
           </a>
-          <p>Software crafted by Chris. Polished apps for mobile devices and the web.</p>
+          <p>Small apps I build on the side. No ads, no accounts, no tracking.</p>
         </div>
         <nav class="footer-nav" aria-label="Footer">
           <a href="index.html">Home</a>
-          <a href="work.html">Work</a>
+          <a href="work.html">Apps</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </nav>

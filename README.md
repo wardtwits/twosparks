@@ -1,18 +1,19 @@
 # Two Sparks
 
-Static portfolio site for Two Sparks Software. Plain HTML, CSS, and JS with no build step, made for GitHub Pages.
+Personal site for the apps Chris builds on the side (Two Sparks Software). Plain HTML, CSS, and JS with no build step, made for GitHub Pages.
 
 ## Structure
 
 ```
 index.html      Home
-work.html       Portfolio / case studies
+work.html       Apps (nav label "Apps"; filename kept so existing links work)
 about.html      About Chris
 contact.html    Contact form (opens the visitor's email app; no server needed)
 404.html        Not-found page (GitHub Pages serves it automatically)
 assets/css/     styles.css: all styles; colour tokens live in :root
-assets/js/      main.js: menu, starfield, scroll reveals, contact form
-assets/img/     logo mark, favicons, project images
+assets/js/      apps.js: app data + card rendering; main.js: menu, starfield, scroll reveals, contact form
+assets/img/     logo mark, favicons, app icons, og-image.jpg (1200×630 share image)
+images/         author illustration (about page)
 twosparks.png   Original full logo
 ```
 
@@ -31,5 +32,5 @@ python3 -m http.server 8000
 
 ## Editing
 
-- **Contact email:** `Chris@twosparks.app`, set in `contact.html` (form `data-email`, mailto link, and copy button).
-- **Add a project:** copy an `<article class="card case">` block in `work.html` (and an `<article class="card project">` on the home page if you want to feature it there).
+- **Contact email:** `Chris@twosparks.software`, set in `contact.html` (form `data-email`, mailto link, and copy button) and `about.html`.
+- **Add an app:** add one object to `APPS` in `assets/js/apps.js`. It appears on the home page, the Apps page, and the contact form's "About" picker and support list. Also update the `<noscript>` fallbacks in `index.html` and `work.html`.
