@@ -922,18 +922,30 @@ p {
 }
 
 .case-body .viisi-logo {
-  width: 240px;
-  max-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   margin-top: 12px;
-  background: #f5ebdd;
-  border-radius: var(--radius-sm);
-  overflow: hidden;
+  color: #eef1ff;
+  font-family: "Nunito", var(--font-body);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: normal;
 }
 
-.viisi-logo img {
-  width: 100%;
-  height: 112px;
-  object-fit: cover;
+.viisi-logo-mark {
+  display: grid;
+  place-items: center;
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: #fb4655;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  transform: rotate(3deg);
+  box-shadow: 0 10px 25px rgba(251, 70, 85, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.12) inset;
 }
 
 .case-body .tagline {
