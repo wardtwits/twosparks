@@ -942,10 +942,10 @@ p {
   border-bottom: 0;
 }
 
-/* Keep the full Viisi website hero visible in the taller case-study panel. */
+/* Keep the full Viisi website hero visible in the taller case-study panel, pinned to the top. */
 .case-media.project-media--viisi img {
   object-fit: contain;
-  object-position: center;
+  object-position: top center;
 }
 
 .case-body {
